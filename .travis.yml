@@ -1,0 +1,21 @@
+language: java
+jdk:
+  - openjdk8
+
+branches:
+  only:
+    - master
+
+# Travis CI 서버의 Home
+cache:
+  directories:
+  - .autoconf
+  - $HOME/.m2
+
+script: "mvn clean package"
+
+# CI 실행 완료시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - whdms705@nate.com 
