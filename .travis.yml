@@ -7,10 +7,10 @@ branches:
     - master
 
 # Travis CI 서버의 Home
-cache:
-  directories:
-  - .autoconf
-  - $HOME/.m2
+#cache:
+#  directories:
+#  - .autoconf
+#  - $HOME/.m2
 
 before_install:
   - chmod +x mvnw
