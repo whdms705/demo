@@ -21,4 +21,17 @@ script: "mvn package"
 notifications:
   email:
     recipients:
-      - whdms705@nate.com 
+      - whdms705@nate.com
+      
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: demo-deploy2 # 6-3-3에서 생성한 S3 버킷
+    region: ap-northeast-1
+    skip_cleanup: true
+    acl: public_read
+    wait-until-deployed: true
+    on:
+      repo: whdms705/demo #Github 주소
+      branch: master
