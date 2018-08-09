@@ -15,13 +15,13 @@ public class ApiController {
 	@GetMapping("/1")
     public String Home1() {
 		log.info("ApiController >> /1");
-		return "test1_1";
+		return "test1_1_20180819";
     }
 	
 	@GetMapping("/2")
     public String Home2() {
 		log.info("ApiController >> /2");
-		return "test2_2";
+		return "test2_2_20180819";
     }
 
 }
