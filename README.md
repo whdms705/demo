@@ -8,4 +8,4 @@
 
 ### 진행사항
 
-- Travis-ci연동 진행중
+- Travis-ci연동완료 , aws codedeploy이용하여 빌드,배포 자동화 완료
