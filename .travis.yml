@@ -6,7 +6,7 @@ branches:
   only:
     - master
 
-# Travis CI 서버의 Home 2
+# Travis CI 서버의 Home 3
 cache:
   directories:
   - .autoconf
